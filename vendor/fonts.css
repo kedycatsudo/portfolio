@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Noto Serif";
+  font-style: normal;
+  /* Replace with the appropriate font weight */
+  font-weight: 400;
+  /* Replace with the correct file path */
+  src: url("./fonts/NotoSerif-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Noto Serif";
+  font-style: normal;
+  /* Replace with the appropriate font weight */
+  font-weight: 500;
+  /* Replace with the correct file path */
+  src: url("./fonts/NotoSerif-Medium.ttf") format("truetype");
+  font-display: swap;
+}

@@ -1,0 +1,95 @@
+.myteam {
+  padding: 0 20px 20px 0;
+}
+.myteam__title {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 60px;
+}
+
+.myteam__list-subtitle {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 20px;
+}
+
+.myteam__list-paragraph {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 16px;
+}
+
+.myteam__cards {
+}
+
+.myteam__list {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 80px;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+.myteam__list-1item {
+  padding-top: 200px;
+  margin: 0;
+}
+.myteam__list-2item {
+  margin: 0;
+  padding-top: 100px;
+}
+.myteam__list-3item {
+  margin: 0;
+  padding-top: 200px;
+}
+.myteam__list-4item {
+  margin: 0;
+  padding-top: 100px;
+}
+.myteam__list-img {
+  padding: 0 20px 0 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1200px) {
+  .myteam__list {
+    grid-template-rows: repeat(4, auto);
+    gap: 10px;
+    height: 100vh;
+    grid-template-columns: 1fr; /* Add this line to switch to a single column */
+  }
+  .myteam__list_texts {
+    display: grid;
+    flex-direction: column;
+  }
+  .myteam__list-1item {
+    display: flex;
+    padding-top: 10px;
+  }
+  .myteam__list-2item {
+    padding-top: 10px;
+    display: flex;
+  }
+  .myteam__list-3item {
+    padding-top: 10px;
+    display: flex;
+  }
+  .myteam__list-4item {
+    display: flex;
+    padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .myteam__title {
+    padding-left: 100px;
+  }
+  .myteam__list {
+    padding-left: 100px;
+  }
+}

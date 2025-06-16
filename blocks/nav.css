@@ -1,0 +1,67 @@
+.nav {
+  background-color: #2d2d2d;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav__list {
+  display: flex;
+  max-width: 750px;
+  gap: 40px;
+  padding-right: 50px;
+  list-style: none;
+  margin: auto 0;
+}
+
+.nav__title {
+  margin: auto 0;
+  padding-left: 50px;
+  color: white;
+}
+
+.nav__list-item {
+}
+
+.nav__list-item a {
+  color: white;
+  text-decoration: none; /* optional: removes underline */
+}
+@media (max-width: 1440px) {
+  .nav {
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    max-width: 10px; /* Adjust as needed */
+    flex-direction: column;
+    display: flex;
+    background: #2d2d2d; /* Match your header color */
+    z-index: 1000;
+    justify-content: flex-start;
+  }
+  .main-content {
+    margin-left: 200px; /* Add this to push content right */
+  }
+  .nav__title {
+    padding: 20px 5px;
+    margin: 0;
+  }
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 20px 5px;
+  }
+}
