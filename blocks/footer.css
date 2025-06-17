@@ -14,6 +14,54 @@
 }
 
 .footer__list {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 .footer__list-item {
+  display: flex;
+
+  margin: 0;
+  padding: 0 10px 10px 0;
+}
+.footer_img {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  min-width: 250px;
+  display: block;
+  min-height: 100vh;
+}
+.footer_icon {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  margin: 0 5px 0 0;
+}
+
+@media (max-width: 1440px) {
+  .footer_img {
+    min-height: 500px;
+    min-width: 250px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .footer__cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .footer_img {
+    max-width: 250px;
+    max-height: 250px;
+    min-height: 50px;
+    min-width: 50px;
+  }
+  .footer__title {
+    padding: 10px;
+  }
 }

@@ -92,4 +92,9 @@
   .myteam__list {
     padding-left: 100px;
   }
+
+  .myteam__list-img {
+    max-width: 150px;
+    max-height: 150px;
+  }
 }
