@@ -1,0 +1,33 @@
+.modal {
+  overflow: auto;
+  max-height: 95vh;
+  visibility: visible;
+  background-color: #0f0d0d;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  margin: 50px;
+  opacity: 0.9;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+.modal__title {
+  font-size: 75px;
+}
+
+.modal__container {
+  display: grid;
+  grid-template-rows: repeat(2, fit-content);
+  justify-content: center;
+  align-items: center;
+}
+
+.modtext__container {
+  justify-content: center;
+  align-items: center;
+}
+.mod__gal-img {
+  width: 80vh;
+}

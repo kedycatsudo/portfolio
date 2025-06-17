@@ -41,6 +41,7 @@
 }
 
 .portfolio__list-img {
+  width: 550px;
 }
 
 @media (max-width: 1200px) {

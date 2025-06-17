@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./pages/index.css" />
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
   </head>
-  <body>
+  <body class="body">
     <div class="page">
       <header class="header page__section">
         <nav class="nav">
@@ -129,16 +129,16 @@
             <ul class="portfolio__list">
               <li class="portfolio__list-item">
                 <img
-                  src="./images/building_1.jpeg"
+                  src="./images/preview_spots.png"
                   alt=""
                   class="portfolio__list-img"
                 />
-                <h3 class="list__subtitle">Portfilo 01</h3>
+                <h3 class="list__subtitle">Spots</h3>
                 <p class="portfolio__paragraph">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo
+                  Spots is a responsive social media platform that allows users
+                  to share and interact with photos of interesting places. The
+                  platform features a clean, modern interface with user profiles
+                  and a photo gallery layout.
                 </p>
               </li>
               <li class="portfolio__list-item">
@@ -272,7 +272,60 @@
           </div>
         </div>
       </footer>
-      <div class="modal" id="preview-modal"></div>
+      <div class="modal" id="project_modal">
+        <div class="modal__container">
+          <div class="modtext__container">
+            <h2 class="modal__title">Portfolio 1 - Spots</h2>
+            <p class="modal__paragraph">
+              Spots is a responsive social media platform that allows users to
+              share and interact with photos of interesting places. The platform
+              features a clean, modern interface with user profiles and a photo
+              gallery layout.
+            </p>
+            <h3 class="modal__subtitle">Functionality</h3>
+            <ul class="modal__list">
+              <li class="modal__list-item">
+                Responsive design that works on desktop, tablet, and mobile
+                devices
+              </li>
+              <li class="modal__list-item">
+                User profile section with edit capabilities
+              </li>
+              <li class="modal__list-item">
+                Photo gallery with like functionality
+              </li>
+              <li class="modal__list-item">
+                Grid-based card layout for optimal photo presentation
+              </li>
+            </ul>
+            <h3 class="modal__subtitle">Technologies and Techniques</h3>
+            <ul class="modal__list">
+              <li class="modal__list-item">
+                HTML5 - Semantic markup for better accessibility and SEO
+              </li>
+              <li class="modal__list-item">
+                CSS3 - Modern styling with Flexbox and Grid layouts
+              </li>
+              <li class="modal__list-item">
+                BEM Methodology - For scalable and maintainable CSS architecture
+              </li>
+              <li class="modal__list-item">
+                Responsive Design - Media queries for different screen sizes
+              </li>
+              <li class="modal__list-item">
+                Git - Version control and project deployment
+              </li>
+              <li class="modal__list-item">
+                Javascript - To make it interactive with user
+              </li>
+            </ul>
+          </div>
+          <div class="modgallery__container">
+            <img src="./images/preview_spots.png" alt="" class="mod__gal-img" />
+          </div>
+        </div>
+      </div>
     </div>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
