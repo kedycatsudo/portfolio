@@ -9,6 +9,10 @@
   width: 100%;
   z-index: 1000;
 }
+.nav__hidden {
+  /*make sure add that to classlist later*/
+  visibility: hidden;
+}
 
 .nav__list {
   display: flex;
