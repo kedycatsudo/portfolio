@@ -1,8 +1,10 @@
 .modal {
+  z-index: 1000; /* above the overlay */
+  position: fixed;
   overflow: auto;
   max-height: 95vh;
-  visibility: visible;
-  background-color: #2d2d2d;
+  visibility: hidden;
+  background-color: #1d1a1a;
   position: fixed;
   top: 0;
   right: 0;
@@ -11,8 +13,54 @@
   padding: 0;
   margin: 50px;
   opacity: 0.9;
-  transition: opacity 0.5s ease, visibility 0.5s ease;
+
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.7);
 }
+
+.modal__darker {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6); /* semi-transparent black */
+  z-index: 999;
+  /* Optional: add a fade-in effect */
+  transition: opacity 0.3s;
+  opacity: 1;
+}
+
+.modal__visible {
+  visibility: visible;
+}
+
+.modal__close-btn {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  background-image: url("../images/modal_close_button.svg");
+  background-position: center;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-size: auto;
+  border: none;
+  top: 80px;
+  right: 80px;
+  background-color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 8px 4px 14px rgba(0, 0, 0, 1);
+}
+.modal__close-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
 .modal__paragraph {
   margin: 0;
   padding: 0 0 10px 0;

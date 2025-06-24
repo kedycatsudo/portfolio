@@ -272,95 +272,99 @@
           </div>
         </div>
       </footer>
-      <div class="modal" id="project_modal">
-        <div class="modal__container">
-          <div class="modtext__container">
-            <h2 class="modal__title">Portfolio 1 - Spots</h2>
-            <p class="modal__paragraph">
-              Spots is a responsive social media platform that allows users to
-              share and interact with photos of interesting places. The platform
-              features a clean, modern interface with user profiles and a photo
-              gallery layout.
-            </p>
-            <h3 class="modal__subtitle">Functionality</h3>
-            <ul class="modal__list">
-              <li class="modal__list-item">
-                Responsive design that works on desktop, tablet, and mobile
-                devices
-              </li>
-              <li class="modal__list-item">
-                User profile section with edit capabilities
-              </li>
-              <li class="modal__list-item">
-                Photo gallery with like functionality
-              </li>
-              <li class="modal__list-item">
-                Grid-based card layout for optimal photo presentation
-              </li>
-            </ul>
-            <h3 class="modal__subtitle">Technologies and Techniques</h3>
-            <ul class="modal__list">
-              <li class="modal__list-item">
-                HTML5 - Semantic markup for better accessibility and SEO
-              </li>
-              <li class="modal__list-item">
-                CSS3 - Modern styling with Flexbox and Grid layouts
-              </li>
-              <li class="modal__list-item">
-                BEM Methodology - For scalable and maintainable CSS architecture
-              </li>
-              <li class="modal__list-item">
-                Responsive Design - Media queries for different screen sizes
-              </li>
-              <li class="modal__list-item">
-                Git - Version control and project deployment
-              </li>
-              <li class="modal__list-item">
-                Javascript - To make it interactive with user
-              </li>
+      <div class="modal-overlay">
+        <div class="modal modal__darker" id="project_modal">
+          <div class="modal__container">
+            <button class="modal__close-btn"></button>
+            <div class="modtext__container">
+              <h2 class="modal__title">Portfolio 1 - Spots</h2>
+              <p class="modal__paragraph">
+                Spots is a responsive social media platform that allows users to
+                share and interact with photos of interesting places. The
+                platform features a clean, modern interface with user profiles
+                and a photo gallery layout.
+              </p>
+              <h3 class="modal__subtitle">Functionality</h3>
+              <ul class="modal__list">
+                <li class="modal__list-item">
+                  Responsive design that works on desktop, tablet, and mobile
+                  devices
+                </li>
+                <li class="modal__list-item">
+                  User profile section with edit capabilities
+                </li>
+                <li class="modal__list-item">
+                  Photo gallery with like functionality
+                </li>
+                <li class="modal__list-item">
+                  Grid-based card layout for optimal photo presentation
+                </li>
+              </ul>
+              <h3 class="modal__subtitle">Technologies and Techniques</h3>
+              <ul class="modal__list">
+                <li class="modal__list-item">
+                  HTML5 - Semantic markup for better accessibility and SEO
+                </li>
+                <li class="modal__list-item">
+                  CSS3 - Modern styling with Flexbox and Grid layouts
+                </li>
+                <li class="modal__list-item">
+                  BEM Methodology - For scalable and maintainable CSS
+                  architecture
+                </li>
+                <li class="modal__list-item">
+                  Responsive Design - Media queries for different screen sizes
+                </li>
+                <li class="modal__list-item">
+                  Git - Version control and project deployment
+                </li>
+                <li class="modal__list-item">
+                  Javascript - To make it interactive with user
+                </li>
+              </ul>
+            </div>
+
+            <ul class="modgallery__list">
+              <il class="modgallery__list-item">
+                <img
+                  src="./images/preview_spots.png"
+                  alt="gallery image1"
+                  class="mod__gal-img"
+                />
+              </il>
+              <il class="modgallery__list-item">
+                <img
+                  src="./images/edit_profile_ss.png"
+                  alt="gallery image1"
+                  class="mod__gal-img"
+                />
+              </il>
+              <il class="modgallery__list-item">
+                <img
+                  src="./images/edit_modal_ss.png"
+                  alt="gallery image1"
+                  class="mod__gal-img"
+                />
+              </il>
+              <il class="modgallery__list-item">
+                <img
+                  src="./images/preview_img_ss.png"
+                  alt="gallery image1"
+                  class="mod__gal-img"
+                />
+              </il>
+              <il class="modgallery__list-item">
+                <img
+                  src="./images/mobile_layout_ss.png"
+                  alt="gallery image1"
+                  class="mod__gal-img"
+                />
+              </il>
             </ul>
           </div>
-
-          <ul class="modgallery__list">
-            <il class="modgallery__list-item">
-              <img
-                src="./images/preview_spots.png"
-                alt="gallery image1"
-                class="mod__gal-img"
-              />
-            </il>
-            <il class="modgallery__list-item">
-              <img
-                src="./images/edit_profile_ss.png"
-                alt="gallery image1"
-                class="mod__gal-img"
-              />
-            </il>
-            <il class="modgallery__list-item">
-              <img
-                src="./images/edit_modal_ss.png"
-                alt="gallery image1"
-                class="mod__gal-img"
-              />
-            </il>
-            <il class="modgallery__list-item">
-              <img
-                src="./images/preview_img_ss.png"
-                alt="gallery image1"
-                class="mod__gal-img"
-              />
-            </il>
-            <il class="modgallery__list-item">
-              <img
-                src="./images/mobile_layout_ss.png"
-                alt="gallery image1"
-                class="mod__gal-img"
-              />
-            </il>
-          </ul>
         </div>
       </div>
     </div>
-    <script src="./scripts/script.js"></script>
+    <script src="./scripts/script.js" defer></script>
   </body>
 </html>
