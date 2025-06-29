@@ -16,8 +16,8 @@
   <body class="body">
     <div class="page">
       <header class="header page__section">
-        <nav class="nav nav__hidden">
-          <p class="nav__title">Doruk Kocausta</p>
+        <nav class="nav">
+          <p class="nav__title">Doruk Kocausta / Portfolio</p>
           <ul class="nav__list">
             <li class="nav__list-item"><a href="#">Home</a></li>
             <li class="nav__list-item">
@@ -299,6 +299,9 @@
                 <li class="modal__list-item">
                   Grid-based card layout for optimal photo presentation
                 </li>
+                <li class="modal__list-item">
+                  Form Validation for user inputs
+                </li>
               </ul>
               <h3 class="modal__subtitle">Technologies and Techniques</h3>
               <ul class="modal__list">
@@ -325,46 +328,74 @@
             </div>
 
             <ul class="modgallery__list">
-              <il class="modgallery__list-item">
+              <li class="modgallery__list-item">
                 <img
+                  id="first_image"
                   src="./images/preview_spots.png"
                   alt="gallery image1"
                   class="mod__gal-img"
                 />
-              </il>
-              <il class="modgallery__list-item">
+              </li>
+              <li class="modgallery__list-item">
                 <img
+                  id="second_image"
                   src="./images/edit_profile_ss.png"
                   alt="gallery image1"
                   class="mod__gal-img"
                 />
-              </il>
-              <il class="modgallery__list-item">
+              </li>
+              <li class="modgallery__list-item">
                 <img
+                  id="third_image"
                   src="./images/edit_modal_ss.png"
                   alt="gallery image1"
                   class="mod__gal-img"
                 />
-              </il>
-              <il class="modgallery__list-item">
+              </li>
+              <li class="modgallery__list-item">
                 <img
+                  id="fourth_image"
+                  i
                   src="./images/preview_img_ss.png"
-                  alt="gallery image1"
+                  alt="img big size preview ss"
                   class="mod__gal-img"
                 />
-              </il>
-              <il class="modgallery__list-item">
+              </li>
+              <li class="modgallery__list-item">
                 <img
+                  id="fifth_image"
                   src="./images/mobile_layout_ss.png"
                   alt="gallery image1"
                   class="mod__gal-img"
                 />
-              </il>
+              </li>
+              <li class="modgallery__list-item">
+                <img
+                  id="sixth_image"
+                  src="./images/mobile_newpost_validation.png"
+                  alt="mobile_newpost_validation"
+                  class="mod__gal-img"
+                />
+              </li>
+              <li class="modgallery__list-item">
+                <img
+                  id="seventh_image"
+                  src="./images/mobile_edit_validation.png"
+                  alt="mobile_edit_validation"
+                  class="mod__gal-img"
+                />
+              </li>
             </ul>
           </div>
         </div>
+        <div class="modal__image-container">
+          <button class="modimg__close-btn"></button>
+          <template id="modal-img-template">
+            <img src="" alt="" class="modal__image-project" />
+          </template>
+        </div>
       </div>
     </div>
-    <script src="./scripts/script.js" defer></script>
+    <script type="module" src="./pages/index.js"></script>
   </body>
 </html>

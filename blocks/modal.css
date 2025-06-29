@@ -16,7 +16,50 @@
 
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.7);
 }
+.modal__image-container {
+  z-index: 1001; /* above the modal */
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+  opacity: 1;
 
+  background: black;
+}
+.modimg__close-btn {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  background-image: url("../images/modal_close_button.svg");
+  background-position: center;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-size: auto;
+  border: none;
+  top: 50px;
+  right: 50px;
+  background-color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 8px 4px 14px rgba(0, 0, 0, 1);
+}
+.modal__image-project {
+  max-width: 100%;
+
+  display: block;
+  margin: 0 auto;
+}
 .modal__darker {
   position: fixed;
   top: 0;
@@ -44,8 +87,8 @@
   background-repeat: no-repeat;
   background-size: auto;
   border: none;
-  top: 80px;
-  right: 80px;
+  top: 50px;
+  right: 50px;
   background-color: white;
   padding: 0.75rem 1.5rem;
   border: none;
@@ -58,7 +101,7 @@
 }
 .modal__close-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 18px rgba(255, 255, 255, 0.5);
 }
 
 .modal__paragraph {
@@ -104,7 +147,9 @@
   padding: 0 0 10px 0;
 }
 .mod__gal-img {
-  max-width: 300px;
+  margin: 0 auto;
+  max-height: 162px;
+  max-width: fit-content;
   display: block;
 }
 
@@ -116,8 +161,8 @@
 .modgallery__list-item {
   margin: 0;
   max-width: fit-content;
-  list-style-type: none;
-  justify-content: center;
+
+  max-width: 300px;
   align-items: center;
 }
 
