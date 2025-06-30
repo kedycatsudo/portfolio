@@ -1,5 +1,6 @@
 import { projectImages } from "../utils/constants.js";
-
+import Section from "../utils/Section.js";
+import imageViewer from "../components/imageViewer.js";
 const modalOverlay = document.querySelector(".modal-overlay");
 const portfolioModal = document.querySelector("#project_modal");
 const portfItems = document.querySelectorAll(".portfolio__list-item");
@@ -12,6 +13,10 @@ const nav = document.querySelector(".nav");
 const ImgTemplate = document.querySelector("#modal-img-template");
 const imgCloseBtn = document.querySelector(".modimg__close-btn");
 const modalImgEl = ImgTemplate.querySelector(".modal__image-project");
+const ImageView = new imageViewer(modalImagesList, "#modal-img-template");
+
+ImageView.setEventListeners();
+
 const ImgEl = ImgTemplate.content
   .querySelector(".modal__image-project")
   .cloneNode(true);
@@ -38,42 +43,7 @@ portfItems.forEach((item) => {
     body.classList.add("body__hidden");
   });
 });
-modalImagesList.forEach((image) => {
-  image.addEventListener("click", () => {
-    openModal(modalImageContainer);
 
-    if (image.id == "first_image") {
-      ImgEl.src = projectImages[0].src;
-      ImgEl.alt = projectImages[0].alt;
-      modalImageContainer.append(ImgEl);
-      // You may want to append ImgEl to the modal or perform other actions here
-    } else if (image.id == "second_image") {
-      ImgEl.src = projectImages[1].src;
-      ImgEl.alt = projectImages[1].alt;
-      modalImageContainer.append(ImgEl);
-    } else if (image.id == "third_image") {
-      ImgEl.src = projectImages[2].src;
-      ImgEl.alt = projectImages[2].alt;
-      modalImageContainer.append(ImgEl);
-    } else if (image.id == "fourth_image") {
-      ImgEl.src = projectImages[3].src;
-      ImgEl.alt = projectImages[3].alt;
-      modalImageContainer.append(ImgEl);
-    } else if (image.id == "fifth_image") {
-      ImgEl.src = projectImages[4].src;
-      ImgEl.alt = projectImages[4].alt;
-      modalImageContainer.append(ImgEl);
-    } else if (image.id == "sixth_image") {
-      ImgEl.src = projectImages[5].src;
-      ImgEl.alt = projectImages[5].alt;
-      modalImageContainer.append(ImgEl);
-    } else if (image.id == "seventh_image") {
-      ImgEl.src = projectImages[6].src;
-      ImgEl.alt = projectImages[6].alt;
-      modalImageContainer.append(ImgEl);
-    }
-  });
-});
 imgCloseBtn.addEventListener("click", () => {
   ImgEl.src = "";
   ImgEl.alt = "";
