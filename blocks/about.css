@@ -21,7 +21,7 @@
 }
 
 .about__subtitle {
-  margin: 0 0 50pxs;
+  margin: 0 0 50px;
   padding: 0;
   font-size: 30px;
 }
@@ -33,7 +33,7 @@
 .about__title {
   margin: 0 0 100px;
   padding: 0;
-  font-size: 60px;
+  font-size: 50px;
   text-align: center;
 }
 .about__paragraph {
@@ -61,5 +61,9 @@
   .about__title {
     margin: 0 0 20px;
     padding: 0;
+    font-size: 30px;
+  }
+  .about__paragraph {
+    font-size: 20px;
   }
 }

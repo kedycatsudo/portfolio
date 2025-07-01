@@ -96,6 +96,9 @@
 }
 
 @media screen and (max-width: 750px) {
+  .header {
+    margin-bottom: 100px;
+  }
   .header__cards {
     display: flex;
     flex-direction: column;
@@ -119,6 +122,7 @@
   }
   .header__paragraph {
     text-align: center;
+    font-size: 20px;
   }
   .header__card {
     padding-left: 10px;

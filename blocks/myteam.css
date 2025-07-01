@@ -91,6 +91,7 @@
 @media screen and (max-width: 750px) {
   .myteam__title {
     padding-left: 100px;
+    font-size: 50px;
   }
   .myteam__list {
     padding-left: 100px;
@@ -100,5 +101,33 @@
   .myteam__list-img {
     max-width: 150px;
     max-height: 150px;
+  }
+  .myteam__list-1item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .myteam__list-2item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .myteam__list-3item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .myteam__list-4item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }

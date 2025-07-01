@@ -70,4 +70,13 @@
   .footer__title {
     padding: 10px;
   }
+  .footer__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
 }
