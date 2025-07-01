@@ -13,6 +13,7 @@
   padding: 0;
   margin: 50px;
   opacity: 0.9;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
 
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.7);
 }
@@ -107,6 +108,7 @@
 .modal__paragraph {
   margin: 0;
   padding: 0 0 10px 0;
+  font-size: 20px;
 }
 .modal__title {
   margin: 0;
@@ -114,6 +116,7 @@
   font-size: 75px;
 }
 .modal__subtitle {
+  font-size: 40px;
   margin: 0;
   padding: 0 0 10px 0;
 }
@@ -145,12 +148,14 @@
 .modal__list-item {
   margin: 0;
   padding: 0 0 10px 0;
+  font-size: 20px;
 }
 .mod__gal-img {
   margin: 0 auto;
   max-height: 162px;
   max-width: fit-content;
   display: block;
+  padding: 0;
 }
 
 .modal__list {
