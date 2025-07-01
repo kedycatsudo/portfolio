@@ -1,5 +1,6 @@
 .myteam {
   padding: 0 20px 20px 0;
+  height: fit-content;
 }
 .myteam__title {
   margin: 0;
@@ -9,10 +10,10 @@
 }
 
 .myteam__list-subtitle {
-  margin: 0;
+  margin: 0 0 10px;
   padding: 0;
   text-align: center;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .myteam__list-paragraph {
@@ -54,6 +55,8 @@
 .myteam__list-img {
   padding: 0 20px 0 0;
   box-sizing: border-box;
+  width: 200px;
+  height: 200px;
 }
 
 @media (max-width: 1200px) {
@@ -91,6 +94,7 @@
   }
   .myteam__list {
     padding-left: 100px;
+    height: fit-content;
   }
 
   .myteam__list-img {

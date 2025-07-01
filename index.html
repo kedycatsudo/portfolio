@@ -19,22 +19,24 @@
         <nav class="nav">
           <p class="nav__title">Doruk Kocausta / Portfolio</p>
           <ul class="nav__list">
-            <li class="nav__list-item"><a href="#">Home</a></li>
             <li class="nav__list-item">
-              <a href="#"> About Me</a>
+              <a href="#Introduction">Introduction</a>
             </li>
             <li class="nav__list-item">
-              <a href="#">Work Collection</a>
+              <a href="#About"> About Me</a>
             </li>
             <li class="nav__list-item">
-              <a href="#">Contact</a>
+              <a href="#Portfolioitems">Work Collection</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="#Contact">Contact</a>
             </li>
           </ul>
         </nav>
         <div class="header__cards">
           <div class="header__card">
             <img
-              src="./images/profile.jpeg"
+              src="./images/mypic.jpg"
               alt="Profile pic"
               class="header__img"
             />
@@ -46,84 +48,80 @@
               <h1 class="header__title">My Portfolio</h1>
               <!--header__title needs different size thats why i have card__title for other cards`s titles-->
               <p class="header__paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud
+                Hi, I’m Doruk Kocausta — a junior software developer with a
+                background in cybersecurity and a former sous chef. I love
+                turning ideas into real, usable products through clean,
+                thoughtful code. Welcome to my portfolio — a snapshot of where
+                I’ve been and where I’m headed.
               </p>
-            </div>
-
-            <div class="header__buttons">
-              <button class="header__button">Explore Now</button>
-              <button class="header__button">Play the Work Collection</button>
             </div>
           </div>
         </div>
       </header>
       <main class="content">
-        <section class="intro page__section">
+        <section class="intro page__section" id="Introduction">
           <div class="intro__cards">
             <div class="intro__card">
-              <h2 class="intro__title">introduction</h2>
-              <p class="card__paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt
-              </p>
               <ul class="intro__list">
                 <li class="intro__list-item">
-                  <h3 class="list__subtitle">About Me</h3>
+                  <h3 class="list__subtitle">About Me Software Engineer</h3>
                   <p class="list__paragraph">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo
+                    I’m a full-stack developer trained through TripleTen’s
+                    intensive bootcamp, where I’ve built real-world applications
+                    using React, JavaScript, Node.js, Python, and MongoDB. With
+                    a background in cybersecurity and a degree in Computer
+                    Engineering, I bring both curiosity and technical depth to
+                    every project I touch. I focus on building solutions that
+                    are clean, accessible, and practical for everyday users.
                   </p>
                 </li>
                 <li class="intro__list-item">
-                  <h3 class="list__subtitle">About Portfolio</h3>
+                  <h3 class="list__subtitle">About Me Sous Chef</h3>
                   <p class="list__paragraph">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo
+                    Before stepping into tech, I spent five years as a sous chef
+                    — leading kitchen teams and managing high-volume events.
+                    Working under pressure, solving fast-moving problems, and
+                    communicating clearly with a team were all part of my daily
+                    life. Being a chef taught me discipline, precision, and how
+                    to deliver high-quality results on a deadline.
                   </p>
                 </li>
               </ul>
             </div>
             <div class="intro__card">
-              <img src="./images/intro.jpeg" alt="" class="intro__img" />
+              <img src="./images/mypicchef.jpg" alt="" class="intro__img" />
             </div>
           </div>
         </section>
-        <section class="about page__section">
+        <section class="about page__section" id="About">
           <div class="about__cards">
             <div class="about__card"></div>
             <div class="about__card">
-              <h2 class="about__title">About Me</h2>
-
-              <h3 class="about__subtitle">My Vision</h3>
+              <h2 class="about__title">Being a Chef and Software Engineer</h2>
               <p class="about__paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                Both roles demand creativity, structure, and teamwork. Whether
+                you’re plating a dish or pushing code, success depends on
+                balancing detail and speed. In both kitchens and codebases, I
+                thrive when things are complex, collaborative, and require
+                thoughtful execution.
               </p>
 
               <h3 class="about__subtitle">My Vision</h3>
               <p class="about__paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                To build meaningful, user-focused software that solves real
+                problems and helps communities thrive.
+              </p>
+
+              <h3 class="about__subtitle">My Mission</h3>
+              <p class="about__paragraph">
+                To grow as a developer by working on mission-driven teams where
+                I can keep learning, contribute value, and help create intuitive
+                digital experiences.
               </p>
             </div>
           </div>
         </section>
-        <section class="portfolio page__section">
+        <section class="portfolio page__section" id="Portfolioitems">
           <h2 class="portfolio__title">My Favorite Portfolio</h2>
           <div class="portfolio__cards">
             <ul class="portfolio__list">
@@ -147,13 +145,8 @@
                   alt=""
                   class="portfolio__list-img"
                 />
-                <h3 class="list__subtitle">Portfilo 01</h3>
-                <p class="portfolio__paragraph">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo
-                </p>
+                <h3 class="list__subtitle">Meal Match</h3>
+                <p class="portfolio__paragraph">Will be here soon.</p>
               </li>
             </ul>
           </div>
@@ -164,61 +157,66 @@
             <ul class="myteam__list">
               <li class="myteam__list-1item">
                 <img
-                  src="./images/team_ai_img.jpg"
+                  src="./images/headphone.jpeg"
                   alt=""
                   class="myteam__list-img"
                 />
                 <div class="myteam__list_texts">
-                  <h3 class="myteam__list-subtitle">Brigitte Schwartz</h3>
-                  <p class="myteam__list-paragraph">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim
+                  <h3 class="myteam__list-subtitle">My Headphone</h3>
+                  <p class="list__paragraph">
+                    Music is so important for me. Music make the noises cut
+                    while i am working. I would like to listen lofi or white or
+                    brown noises. I constantly keep searching what kind of
+                    musics are helpful to make the study or work section more
+                    effective.
                   </p>
                 </div>
               </li>
               <li class="myteam__list-2item">
                 <img
-                  src="./images/team_ai_img.jpg"
+                  src="./images/chatgpt.png"
                   alt=""
                   class="myteam__list-img"
                 />
                 <div class="myteam__list_texts">
-                  <h3 class="myteam__list-subtitle">Brigitte Schwartz</h3>
+                  <h3 class="myteam__list-subtitle">Chatgpt</h3>
                   <p class="list__paragraph">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim
+                    Me and my budy Chatgpt has an old friendship. Seriously tho
+                    if you can make it your assistant, you will be surprise how
+                    helpful it is. We have to integrate the technology and have
+                    to learn how to use it before the technology start using us.
                   </p>
                 </div>
               </li>
               <li class="myteam__list-3item">
                 <img
-                  src="./images/team_ai_img.jpg"
+                  src="./images/laptop.jpeg"
                   alt=""
                   class="myteam__list-img"
                 />
                 <div class="myteam__list_texts">
-                  <h3 class="myteam__list-subtitle">Brigitte Schwartz</h3>
+                  <h3 class="myteam__list-subtitle">My Laptop</h3>
                   <p class="list__paragraph">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim
+                    I would say the heart of my team. If i don`t have my system
+                    and my personal laptop or computer that i use all the time,
+                    I would be struggling a lot.
                   </p>
                 </div>
               </li>
               <li class="myteam__list-4item">
                 <img
-                  src="./images/team_ai_img.jpg"
+                  src="./images/passion.jpeg"
                   alt=""
                   class="myteam__list-img"
                 />
                 <div class="myteam__list_texts">
-                  <h3 class="myteam__list-subtitle">Brigitte Schwartz</h3>
+                  <h3 class="myteam__list-subtitle">My Passion</h3>
                   <p class="list__paragraph">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim
+                    If you don`t have fuel in your car, it wouldn`t drive you. I
+                    feel like my passion is not only for coding. My passion is
+                    on everywhere and every job that i am doing. I think is
+                    because i am such an ambitious person that i have to make it
+                    happen whatever i am working on.
                   </p>
                 </div>
               </li>
@@ -226,13 +224,12 @@
           </div>
         </section>
       </main>
-      <footer class="footer page__section">
+      <footer class="footer page__section" id="Contact">
         <div class="footer__cards">
           <div class="card">
-            <img src="./images/contact.jpg" alt="" class="footer_img" />
+            <img src="./images/mycontact.png" alt="" class="footer_img" />
           </div>
           <div class="card">
-            <h2 class="footer__title">My Contact</h2>
             <ul class="footer__list">
               <li class="footer__list-item">
                 <img
@@ -248,25 +245,29 @@
                   alt="linkedin icon"
                   class="footer_icon"
                 />
-                <p class="list__paragraph">
+                <a
+                  class="list__paragraph"
+                  href="https://www.linkedin.com/in/doruk-kocausta/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   https://www.linkedin.com/in/doruk-kocausta/
-                </p>
+                </a>
               </li>
-              <li class="footer__list-item">
-                <img
-                  src="./images/indeed_logo.svg"
-                  alt="indeed logo"
-                  class="footer_icon"
-                />
-                <p class="list__paragraph">https://profile.indeed.com/</p>
-              </li>
+
               <li class="footer__list-item">
                 <img
                   src="./images/github_icon.svg"
                   alt="github icon"
                   class="footer_icon"
                 />
-                <p class="list__paragraph">https://github.com/kedycatsudo</p>
+                <a
+                  class="list__paragraph"
+                  href="https://github.com/kedycatsudo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >https://github.com/kedycatsudo</a
+                >
               </li>
             </ul>
           </div>

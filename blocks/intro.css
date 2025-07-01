@@ -16,12 +16,6 @@
   justify-content: center;
 }
 
-.intro__title {
-  margin: 0;
-  padding: 0;
-  font-size: 60px;
-}
-
 .intro__list {
   list-style-type: none;
   padding: 0;
@@ -55,9 +49,9 @@
     max-height: fit-content;
   }
 
-  .intro__card {
+  /*.intro__card {
     height: 80vh;
-  }
+  }*/
 }
 
 @media screen and (max-width: 750px) {
@@ -76,6 +70,7 @@
   }
   .intro__list {
     padding-top: 25px;
+    flex-direction: column;
   }
   .intro__img {
     max-height: fit-content;
